@@ -1,0 +1,60 @@
+﻿<Window x:Name="appMainWindow" x:Class="Курсовой_проект_ТРЗБД.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Курсовой_проект_ТРЗБД"
+        mc:Ignorable="d"
+        Title="Речные круизы" ResizeMode="CanResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+
+        <Grid x:Name="MenuGrid" Visibility="Visible">
+            <Grid.Background>
+                <ImageBrush ImageSource="BackgroudPic.jpg"></ImageBrush>
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Button Grid.Column="2" Grid.Row="13" x:Name="BuyTicketMainMenu" Content="Купить билет" Click="BuyTicketMainMenu_Click"/>
+            <Button Grid.Column="4" Grid.Row="13" x:Name="AuthoriseStafMainMenu" Content="Авторизация" Click="AuthoriseStafMainMenu_Click"/>
+        </Grid>
+        <Grid x:Name="AuthoriseGrid" Visibility="Hidden" Height="808" Width="1544" Margin="0,0,0,0">
+            <TextBox x:Name="LoginInputTB" HorizontalAlignment="Left" Height="37" Margin="672,332,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+            <TextBox x:Name="PasswordInputTB" HorizontalAlignment="Left" Height="37" Margin="672,419,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+            <Button x:Name="AuthoriseBTN" Content="Вход" HorizontalAlignment="Left" Height="26" Margin="722,479,0,0" VerticalAlignment="Top" Width="100" Click="AuthoriseBTN_Click"/>
+            <Label Content="Логин" HorizontalAlignment="Left" Height="40" Margin="672,287,0,0" VerticalAlignment="Top" Width="200" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Content="Пароль" HorizontalAlignment="Left" Height="40" Margin="672,374,0,0" VerticalAlignment="Top" Width="200" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Button x:Name="AuthoriseBackToMM" Content="Назад" HorizontalAlignment="Left" Height="26" Margin="722,510,0,0" VerticalAlignment="Top" Width="100" Click="AuthoriseBackToMM_Click"/>
+
+        </Grid>
+        <Grid x:Name="BuyTicketGrid" Visibility="Hidden" Height="808" Width="1544" Margin="0,0,0,0"/>
+        <Grid x:Name="ManageScreen" Visibility="Hidden" Height="808" Width="1544" Margin="0,0,0,0">
+            <Label Name="Greatings" Content="" Width="1544" Margin="0,0,0,733" Height="75" FontSize="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
+        </Grid>
+    </Grid>
+
+</Window>
